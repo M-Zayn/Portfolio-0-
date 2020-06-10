@@ -1,0 +1,616 @@
+doctype html
+html(lang="en")
+    head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      meta(name='description' content="Hi, I’m M.Zayn , I'm a Front-End")
+      link(rel='shortcut icon' href='imgs/logo.png')
+      title Portfolio
+      link(rel='stylesheet' href='css/bootstrap4.min.css')
+      link(rel='stylesheet' href='css/animated.css')
+      link(rel='stylesheet' href='css/animate.css')
+      link(rel='stylesheet' href='css/jquery.fancybox.css')
+      link(rel='stylesheet' href='css/owl.carousel.css')
+      link(rel='stylesheet' href='css/owl.theme.default.css')
+      link(rel='stylesheet' href='css/font/style.css')
+      link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800&display=swap')
+      link(rel='stylesheet' href='css/style.css')
+
+        // Start Loading
+        .loader-box
+          .loader
+            .face.face1
+              .circle
+            .face.face2
+              .circle
+        // start header
+        header#home
+          // start navbar
+          nav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+              a.navbar-brand(href='#home')
+                | M.Zayn
+                span
+              //
+                a(href="#").navbar-brandimg(src="img/logo.png", alt="my logo")
+              button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+              #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.ml-auto
+                  li.nav-item
+                    a.nav-link.active(href='#home') Home
+                  li.nav-item
+                    a.nav-link(href='#about') About
+                  li.nav-item
+                    a.nav-link(href='#services') Services
+                  li.nav-item
+                    a.nav-link(href='#resume') Resume
+                  li.nav-item
+                    a.nav-link(href='#portfolio') Portfolio
+                  li.nav-item
+                    a.nav-link(href='#blog') Blog
+                  li.nav-item
+                    a.nav-link(href='#contact') Contact
+          // start min header
+          .container
+            .main-heading
+              section.cd-intro
+                h1.cd-headline.slide
+                  span Hi, I&rsquo;m
+                  span.cd-words-wrapper
+                    b.is-visible M.Zayn
+                    b Developer
+                    b Designer
+                    b Freelancer
+              .skil-box
+                ul.list-unstiled
+                  li UI Developer
+                  li Web Developer
+                  li Freelancer
+              a.min-btn(href='#contact') Contact Me
+        // start about
+        section#about.padd-y.about
+          .container
+            .row
+              .col-lg-6.col-12
+                .min-titel.d-lg-none.d-block
+                  h2
+                    | About Me
+                    span.holder
+                    span.num 01.
+                .img-box
+                  img(src='imgs/k.jpg' alt='my photo M.Zayn')
+              .col-lg-6.col-12
+                .min-titel.d-lg-block.d-none
+                  h2
+                    | About Me
+                    span.holder
+                    span.num 01.
+                .contint
+                  h3
+                    span Hi There
+                    | , I&apos;m a Ui Developer that pride myself on being strategic brand partners and awesome product providers.
+                  .caption
+                    p
+                      | I&rsquo;m Willing To Join Company That Would Provide Me With An Opportunity To Establish A Career Where My Interpersonal, Academic And Acquired Skills Can Be Fully Utilized And Developed Through Being An Active &amp; Creative Participant In The Organization&apos;s Success By Working On Achieving Its Visions, Goals And Values.
+                  .personal-info
+                    i.icon-icon-address-card-o
+                    .row
+                      .col-sm-6
+                        .info
+                          p
+                            span Name:
+                            |  M.Zayn
+                          p
+                            span Phone:
+                            |  01028456224
+                      .col-sm-6
+                        .info
+                          p
+                            span Age:
+                            |  23
+                          p
+                            span Address:
+                            |  Mansoura
+                  a.min-btn(href='cv/MostafaZaynCV.pdf' target='_blank') Download CV
+        // start skills
+        section.padd-y.skills
+          .container
+            .min-titel
+              h2
+                | my skills
+                span.holder
+                span.num 02.
+            .row
+              .col-lg-10.col-12.m-auto
+                .skills-container
+                  .row
+                    .col-md-6
+                      .progress-contain
+                        h3.text-center
+                          i.icon-user
+                          | Personal Skills
+                        .progress-container
+                          h4 UI development
+                          .my-progress
+                            span.full(data-progress='80' data-delay='0')
+                              // span(class="timer" data-from="0" data-to="85" data-speed="1000").top 0
+                        .progress-container
+                          h4 Javascript &amp;&amp; jquery &amp;&amp; React
+                          .my-progress
+                            span.full(data-progress='62' data-delay='100')
+                              // span(class="timer" data-from="0" data-to="72" data-speed="1000").top 0
+                        .progress-container
+                          h4 firebase &amp;&amp; php &amp;&amp; mysql &amp;&amp; wordpress
+                          .my-progress
+                            span.full(data-progress='35' data-delay='200')
+                              // span(class="timer" data-from="0" data-to="35" data-speed="1000").top 0
+                    .col-md-6
+                      .progress-contain
+                        h3.text-center
+                          i.icon-users
+                          | Professional Skills
+                        .progress-container
+                          h4 Preprocessors &amp;&amp; Task Runner (gulp)  &amp;&amp; Git
+                          .my-progress
+                            span.full(data-progress='90' data-delay='300')
+                              // span(class="timer" data-from="0" data-to="90" data-speed="1000").top 0
+                        .progress-container
+                          h4 Bootstrap &amp;&amp; UI Frameworks
+                          .my-progress
+                            span.full(data-progress='85' data-delay='400')
+                              // span(class="timer" data-from="0" data-to="85" data-speed="1000").top 0
+                        .progress-container
+                          h4 Photoshop
+                          .my-progress
+                            span.full(data-progress='57' data-delay='500')
+                              // span(class="timer" data-from="0" data-to="57" data-speed="1000").top 0
+        // start services
+        section#services.padd-y.services
+          .container
+            .min-titel
+              h2
+                | my services
+                span.holder
+                span.num 03.
+            .row
+              .col-lg-4.col-sm-6
+                .card-continer.wow.fadeIn(data-wow-duration='.8s' data-wow-offset='100')
+                  i.icon-pencil
+                  h4 Creative Design
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.
+              .col-lg-4.col-sm-6
+                .card-continer.wow.fadeIn(data-wow-duration='.8s' data-wow-offset='100')
+                  i.icon-flag
+                  h4 Branding
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.
+              .col-lg-4.col-sm-6
+                .card-continer.wow.fadeIn(data-wow-duration='.8s' data-wow-offset='100')
+                  i.icon-laptop
+                  h4 User Interface
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.
+              .col-lg-4.col-sm-6
+                .card-continer.wow.fadeIn(data-wow-duration='.8s' data-wow-offset='100')
+                  i.icon-briefcase
+                  h4 User Experience
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.
+              .col-lg-4.col-sm-6
+                .card-continer.wow.fadeIn(data-wow-duration='.8s' data-wow-offset='100')
+                  i.icon-code
+                  h4 Clean Code
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.
+              .col-lg-4.col-sm-6
+                .card-continer.wow.fadeIn(data-wow-duration='.8s' data-wow-offset='100')
+                  i.icon-support
+                  h4 Fast Support
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm.
+        // start Resume
+        section#resume.padd-y.resume
+          .container
+            .min-titel
+              h2
+                | my Resume
+                span.holder
+                span.num 04.
+            .resume-contaner
+              ul.list-unstiled
+                li
+                  .resume-box.wow.fadeInLeft(data-wow-duration='.8s' data-wow-offset='100')
+                    span 2017 - 2018
+                    h4 Freelancer
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                li
+                  .resume-box.wow.fadeInRight(data-wow-duration='.8s' data-wow-offset='100')
+                    span 2018 - 2019
+                    h4 UI developer Freelancer 
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                li
+                  .resume-box.wow.fadeInLeft(data-wow-duration='.8s' data-wow-offset='100')
+                    span 2018 - 2019
+                    h4 Company Name
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                li
+                  .resume-box.wow.fadeInRight(data-wow-duration='.8s' data-wow-offset='100')
+                    span 2018 - 2019
+                    h4 Company Name
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                li
+                  .resume-box.wow.fadeInLeft(data-wow-duration='.8s' data-wow-offset='100')
+                    span 2018 - 2019
+                    h4 Company Name
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        // start portfolio
+        section#portfolio.padd-y.portfolio
+          .container
+            .min-titel
+              h2
+                | my portfolio
+                span.holder
+                span.num 05.
+            .portfolio-container
+              ul.list-unstyled
+                li.mixitup-control-active.active(data-filter='all') All
+                li(data-filter='.work') work
+                li(data-filter='.Apps') Apps
+              .mixitup-container
+                .row.justify-content-center
+                  .col-lg-4.col-md-6.col-12.mix.work
+                    .mix-body
+                      img(src='imgs/portfolio/min/006.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/006.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix.work
+                    .mix-body
+                      img(src='imgs/portfolio/min/002.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/002.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix.work
+                    .mix-body
+                      img(src='imgs/portfolio/min/003.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/003.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix.work
+                    .mix-body
+                      img(src='imgs/portfolio/min/012.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/012.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix.work
+                    .mix-body
+                      img(src='imgs/portfolio/min/003.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/003.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix
+                    .mix-body
+                      img(src='imgs/portfolio/min/006.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/006.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix
+                    .mix-body
+                      .owl-carousel
+                        .slide
+                          img(src='imgs/portfolio/min/006.jpg' alt=' My work img')
+                          .overlay
+                            a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/006.jpg')
+                              i.icon-new-tab
+                            a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                              i.icon-link
+                            h4 Project Name
+                        .slide
+                          img(src='imgs/portfolio/min/002.jpg' alt=' My work img')
+                          .overlay
+                            a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/002.jpg')
+                              i.icon-new-tab
+                            a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                              i.icon-link
+                            h4 Project Name
+                        .slide
+                          img(src='imgs/portfolio/min/003.jpg' alt=' My work img')
+                          .overlay
+                            a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/003.jpg')
+                              i.icon-new-tab
+                            a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                              i.icon-link
+                            h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix.Apps
+                    .mix-body
+                      img(src='imgs/portfolio/min/010.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/010.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix
+                    .mix-body
+                      img(src='imgs/portfolio/min/002.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/002.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix
+                    .mix-body
+                      img(src='imgs/portfolio/min/012.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/012.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+                  .col-lg-4.col-md-6.col-12.mix
+                    .mix-body
+                      img(src='imgs/portfolio/min/003.jpg' alt=' My work img')
+                      .overlay
+                        a(data-fancybox='gallery' data-morphing='' data-type='image' data-caption='Project Name' href='imgs/portfolio/003.jpg')
+                          i.icon-new-tab
+                        a(href='https://M-Zayn.github.io/Project Name' target='_balnk')
+                          i.icon-link
+                        h4 Project Name
+        // start facts
+        section.facts
+          .container
+            .min-titel
+              h2
+                | Fun Facts
+                span.holder
+                span.num 06.
+            .row
+              .col-lg-3.col-sm-6
+                .fact-item
+                  span.fact-timer(data-from='0' data-to='554' data-speed='3500') 0
+                  h4 Projects Done
+              .col-lg-3.col-sm-6
+                .fact-item
+                  span.fact-timer(data-from='0' data-to='548' data-speed='3500') 0
+                  h4 Happy Clients
+              .col-lg-3.col-sm-6
+                .fact-item
+                  span.fact-timer(data-from='0' data-to='1260' data-speed='3500') 0
+                  h4 Hours Of Work
+              .col-lg-3.col-sm-6
+                .fact-item
+                  span.fact-timer(data-from='0' data-to='3200' data-speed='3500') 0
+                  h4 Awards Received
+        // start Testimonials
+        section.padd-y.testimonials
+          .container
+            .min-titel
+              h2
+                | testimonials
+                span.holder
+                span.num 07.
+            .owl-carousel.owl-theme
+              .testimonials-box
+                .client-pic
+                  img(src='imgs/f-1.jpg' alt='client pic')
+                .client-details
+                  h6 Silvia Hatmun
+                  span SEO Manager
+                .content
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              .testimonials-box
+                .client-pic
+                  img(src='imgs/f-2.jpg' alt='client pic')
+                .client-details
+                  h6 Alexander Smith
+                  span Graphic Designer
+                .content
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              .testimonials-box
+                .client-pic
+                  img(src='imgs/f-3.jpg' alt='client pic')
+                .client-details
+                  h6 Joe Paulian
+                  span Web Developer
+                .content
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              .testimonials-box
+                .client-pic
+                  img(src='imgs/f-4.jpg' alt='client pic')
+                .client-details
+                  h6 Cristina Jordan
+                  span Web Developer
+                .content
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        // start My Blog
+        section#blog.padd-y.blog
+          .container
+            .min-titel
+              h2
+                | My Blog
+                span.holder
+                span.num 08.
+            .row
+              .col-lg-4.col-sm-12
+                .blogs
+                  .blog-img
+                    img(src='imgs/post-1.jpg' alt='blogs photo')
+                    .blog-category
+                      a(href='#') Design
+                  .blog-content
+                    .blog-titel
+                      a(href='#')
+                        h4 Post Title Goes Here
+                    ul.blog-info.list-unstyled
+                      li
+                        i.icon-calendar
+                        span 10 Jan 19
+                      li
+                        i.icon-commenting-o
+                        a(href='#')
+                          span 4 Comment
+                    .blog-text
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...
+                    a.blog-more(href='#')
+                      | Read more
+                      i.icon-angle-double-right
+              .col-lg-4.col-sm-12
+                .blogs
+                  .blog-img
+                    img(src='imgs/post-2.jpg' alt='blogs photo')
+                    .blog-category
+                      a(href='#') Logo
+                  .blog-content
+                    .blog-titel
+                      a(href='#')
+                        h4 Post Title Goes Here
+                    ul.blog-info.list-unstyled
+                      li
+                        i.icon-calendar
+                        span 10 Jan 19
+                      li
+                        i.icon-commenting-o
+                        a(href='#')
+                          span 4 Comment
+                    .blog-text
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...
+                    a.blog-more(href='#')
+                      | Read more
+                      i.icon-angle-double-right
+              .col-lg-4.col-sm-12
+                .blogs
+                  .blog-img
+                    img(src='imgs/post-3.jpg' alt='blogs photo')
+                    .blog-category
+                      a(href='#') Branding
+                  .blog-content
+                    .blog-titel
+                      a(href='#')
+                        h4 Post Title Goes Here
+                    ul.blog-info.list-unstyled
+                      li
+                        i.icon-calendar
+                        span 15 Jan 19
+                      li
+                        i.icon-commenting-o
+                        a(href='#')
+                          span 3 Comment
+                    .blog-text
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...
+                    a.blog-more(href='#')
+                      | Read more
+                      i.icon-angle-double-right
+        // start Contact Me
+        section#contact.padd-y.contact
+          .container
+            .min-titel
+              h2
+                | Contact Me
+                span.holder
+                span.num 09.
+            .row
+              .col-lg-10.col-12.m-auto
+                .row
+                  .col-sm-4
+                    .contact.box
+                      .titel-box
+                        .icon
+                          i.icon-location
+                        .titel
+                          h4 Location
+                      .info
+                        p Mansoura
+                      .num-box
+                        span 01.
+                  .col-sm-4
+                    .contact.box
+                      .titel-box
+                        .icon
+                          i.icon-icon-envelope
+                        .titel
+                          h4 email
+                      .info
+                        p Mostafa_Zayn@yahoo.com
+                      .num-box
+                        span 02.
+                  .col-sm-4
+                    .contact.box
+                      .titel-box
+                        .icon
+                          i.icon-icon-phone
+                        .titel
+                          h4 phone
+                      .info
+                        p 01028456224
+                      .num-box
+                        span 03.
+              .col-lg-10.col-12.m-auto
+                form(action='#')
+                  .row
+                    .input-box.col-sm-6
+                      input(name='Name' type='text' placeholder='Name' required='required')
+                    .input-box.col-sm-6
+                      input(name='Email' type='text' placeholder='Email' required='required')
+                    .input-box.col-12
+                      input(name='subject' type='text' placeholder='subject' required='required')
+                    .input-box.col-12
+                      textarea(name='Message' placeholder='Your Message')
+                  button.min-btn Send Message
+        // start footer
+        footer
+          .container
+            .footer-container
+              a.footer-brand(href='#home')
+                | M.Zayn
+                span
+              ul.list-unstiled
+                li
+                  a(href='#')
+                    i.icon-facebook
+                li
+                  a(href='#')
+                    i.icon-twitter
+                li
+                  a(href='#')
+                    i.icon-instagram
+                li
+                  a(href='#')
+                    i.icon-google-plus
+                li
+                  a(href='#')
+                    i.icon-linkedin
+              p
+                | Copyrights All Right Reserved &copy;
+                span 2018
+
+// scripts
+script(src='js/documents.js')
+script(src='js/main.js')
